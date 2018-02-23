@@ -29,7 +29,8 @@ public class Prime
 
 	public boolean isPrime()
 	{
-		for(int i=2;i<number;i++) {
+		for(int i=2;i<number;i++) 
+		{
 	        if(number%i==0)
 	            return false;
 	    }

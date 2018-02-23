@@ -1,0 +1,30 @@
+//© A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date -
+//Class -
+//Lab  -
+
+import java.util.Scanner;
+import static java.lang.System.*;
+
+class PasswordCheck
+{
+	private String password;
+
+	public PasswordCheck()
+	{
+		password = "mchammergohammer";
+	}
+
+	public void check()
+	{
+		Scanner keyboard = new Scanner(System.in);
+
+		do
+		{
+			out.println("Enter the password :: ");
+			String pass = keyboard.nextLine();
+			out.println("INVALID");
+		}while (pass == password);
+	}
+}
