@@ -1,0 +1,171 @@
+//© A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date -
+//Class -
+//Lab  -
+
+import static java.lang.System.*;
+
+public class RomanNumeral
+{
+	private Integer number;
+	private String roman;
+
+	private final static int[] NUMBERS= {1000,900,500,400,100,90,
+													50,40,10,9,5,4,1};
+
+	private final static String[] LETTERS = {"M","CM","D","CD","C","XC",
+												  "L","XL","X","IX","V","IV","I"};
+
+	public RomanNumeral(String str)
+	{
+		roman = str;
+	}
+
+	public RomanNumeral(Integer orig)
+	{
+		number = orig;
+	}
+
+	public void setNumber(Integer num)
+	{
+		number = num;
+	}
+
+	public void setRoman(String rom)
+	{
+		roman = rom;
+	}
+
+	public Integer getNumber()
+	{
+		while (number > 1000)
+		{
+			out.print(LETTERS[0]);
+			number = number - NUMBERS[0];
+		}
+		while (number < NUMBERS[1])
+		{
+			out.print(LETTERS[1]);
+			number = number - NUMBERS[1];
+		}
+		while (number < NUMBERS[2])
+		{
+			out.print(LETTERS[2]);
+			number = number - NUMBERS[2];
+		}
+		while (number < NUMBERS[3])
+		{
+			out.print(LETTERS[3]);
+			number = number - NUMBERS[3];
+		}
+		while (number < NUMBERS[4])
+		{
+			out.print(LETTERS[4]);
+			number = number - NUMBERS[4];
+		}
+		while (number < NUMBERS[5])
+		{
+			out.print(LETTERS[5]);
+			number = number - NUMBERS[5];
+		}
+		while (number < NUMBERS[6])
+		{
+			out.print(LETTERS[6]);
+			number = number - NUMBERS[6];
+		}
+		while (number < NUMBERS[7])
+		{
+			out.print(LETTERS[7]);
+			number = number - NUMBERS[7];
+		}
+		while (number < NUMBERS[8])
+		{
+			out.print(LETTERS[8]);
+			number = number - NUMBERS[8];
+		}
+		while (number < NUMBERS[9])
+		{
+			out.print(LETTERS[9]);
+			number = number - NUMBERS[9];
+		}
+		while (number < NUMBERS[10])
+		{
+			out.print(LETTERS[10]);
+			number = number - NUMBERS[10];
+		}
+		while (number < NUMBERS[11])
+		{
+			out.print(LETTERS[11]);
+			number = number - NUMBERS[11];
+		}
+		
+		return number;*
+	}
+	
+	public String toString()
+	{
+		while (number > 1000)
+		{
+			roman += LETTERS[0];
+			number = number - NUMBERS[0];
+		}
+		while (number > NUMBERS[1])
+		{
+			roman += LETTERS[0];
+			number = number - NUMBERS[1];
+		}
+		while (number > NUMBERS[2])
+		{
+			roman += LETTERS[0];
+			number = number - NUMBERS[2];
+		}
+		while (number > NUMBERS[3])
+		{
+			roman += LETTERS[3];
+			number = number - NUMBERS[3];
+		}
+		while (number > NUMBERS[4])
+		{
+			roman += LETTERS[4];
+			number = number - NUMBERS[4];
+		}
+		while (number > NUMBERS[5])
+		{
+			roman += LETTERS[5];
+			number = number - NUMBERS[5];
+		}
+		while (number > NUMBERS[6])
+		{
+			roman += LETTERS[6];
+			number = number - NUMBERS[6];
+		}
+		while (number > NUMBERS[7])
+		{
+			roman += LETTERS[7];
+			number = number - NUMBERS[7];
+		}
+		while (number > NUMBERS[8])
+		{
+			roman += LETTERS[8];
+			number = number - NUMBERS[8];
+		}
+		while (number > NUMBERS[9])
+		{
+			roman += LETTERS[9];
+			number = number - NUMBERS[9];
+		}
+		while (number > NUMBERS[10])
+		{
+			roman += LETTERS[10];
+			number = number - NUMBERS[10];
+		}
+		while (number > NUMBERS[11])
+		{
+			roman += LETTERS[11];
+			number = number - NUMBERS[11];
+		}
+		
+		return roman;
+	}
+}
